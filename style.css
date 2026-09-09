@@ -1,1 +1,339 @@
-/* Add you CSS here */
+/* ===================================
+   BASIC STYLES - Beginner Friendly
+   =================================== */
+
+/* Universal selector - applies to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body - main container for all content */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Container - used to center and limit width of content */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===================================
+   NAVIGATION BAR
+   =================================== */
+
+.navbar {
+  background-color: #333;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4CAF50;
+}
+
+/* ===================================
+   HERO SECTION
+   =================================== */
+
+.hero {
+  background: #556b2f;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  /* Decorative ornate border */
+  padding: 50px 60px;
+  border: 3px solid black;
+  border-radius: 15px;
+  box-shadow: 
+    0 0 0 6px #556b2f,
+    0 0 0 9px black,
+    0 8px 16px rgba(0, 0, 0, 0.3),
+    inset 0 0 20px rgba(0, 0, 0, 0.1);
+  background: rgba(85, 107, 47, 0.9);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #F5F5F5;
+}
+
+.hero-content .subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: black;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* ===================================
+   BUTTONS
+   =================================== */
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1a1a1a;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #764ba2;
+}
+
+/* ===================================
+   BIO SECTION
+   =================================== */
+
+.bio {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.bio h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.bio p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===================================
+   SKILLS SECTION
+   =================================== */
+
+.skills {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+/* Grid layout for skill cards */
+.skills-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skill-card {
+  flex: 1;
+  min-width: 200px;
+  background-color: #f0f0f0;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card i {
+  font-size: 3rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.skill-card p {
+  color: #666;
+}
+
+/* ===================================
+   EXPERIENCES SECTION
+   =================================== */
+
+.experiences {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.experiences h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.experience-item {
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid #667eea;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.experience-item .date {
+  color: #667eea;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.experience-item p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* ===================================
+   PROJECTS SECTION
+   =================================== */
+
+.projects {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+/* Grid layout for project cards */
+.projects-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-card {
+  flex: 1;
+  min-width: 250px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  background-color: #e0e0e0;
+}
+
+.project-card h3 {
+  padding: 1.5rem 1.5rem 0.5rem;
+  color: #333;
+}
+
+.project-card p {
+  padding: 0 1.5rem 1rem;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.project-card .btn-secondary {
+  display: block;
+  margin: 0 1.5rem 1.5rem;
+  text-align: center;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer p {
+  margin: 0;
+}

@@ -156,14 +156,21 @@ body {
 .bio h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: #1a1a1a;
 }
 
 .bio p {
   font-size: 1.1rem;
   color: #666;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  text-align: left;
+  line-height: 1.8;
+}
+
+/* Remove bottom margin from last paragraph */
+.bio p:last-of-type {
+  margin-bottom: 0;
 }
 
 /* ===================================
@@ -172,48 +179,95 @@ body {
 
 .skills {
   padding: 60px 20px;
-  background-color: white;
+  background-color: #6B8E23;
 }
 
 .skills h2 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #333;
+  color: #1a1a1a;
 }
 
-/* Grid layout for skill cards */
+/* Grid layout for skill buttons */
 .skills-grid {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 
-.skill-card {
+/* Skill button styling */
+.skill-btn {
   flex: 1;
   min-width: 200px;
-  background-color: #f0f0f0;
+  background-color: #333;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Style skill button icons */
+.skill-btn i {
+  font-size: 2rem;
+}
+
+/* Skill button hover effect */
+.skill-btn:hover {
+  background-color: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Skill content sections */
+.skill-content {
+  background-color: white;
   padding: 2rem;
-  text-align: center;
+  margin-bottom: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  display: none;
+  animation: slideDown 0.3s ease;
 }
 
-.skill-card:hover {
-  transform: translateY(-5px);
+/* Show skill content when active */
+.skill-content.active {
+  display: block;
 }
 
-.skill-card i {
-  font-size: 3rem;
-  color: #667eea;
+/* Animation for smooth content reveal */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-content h3 {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
-}
-
-.skill-card h3 {
   color: #333;
-  margin-bottom: 1rem;
+}
+
+.skill-content p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
 }
 
 .skill-card p {
@@ -233,7 +287,7 @@ body {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #333;
+  color: #1a1a1a;
 }
 
 .experience-item {
@@ -275,7 +329,7 @@ body {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #333;
+  color: #1a1a1a;
 }
 
 /* Grid layout for project cards */

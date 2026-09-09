@@ -28,7 +28,7 @@
       <h1>Stefanie Napier</h1>
       <p class="subtitle">Business Food Industry Major; Sustainable Food Systems Minor</p>
     
-      <a href="#projects" class="btn">My Work</a>
+      <a href="#projects" class="btn">See My Work</a>
     </div>
   </section>
 
@@ -36,7 +36,13 @@
   <section id="bio" class="bio">
     <div class="container">
       <h2>About Me</h2>
-      <p>Hi! I'm a student learning web development. I'm passionate about creating beautiful and functional websites. Here you'll find projects I've built while learning HTML, CSS, and JavaScript.</p>
+      <p>I am a business professional, student, and lifelong learner with a passion for the intersection of coffee, food, sustainability, and entrepreneurship. After more than six years with Starbucks, I have grown from a Barista into a Coffeehouse Leader, developing experience in people leadership, operations, talent development, customer experience, and business performance. My career in coffee has shaped not only my professional skills but also my belief that businesses can be both financially successful and meaningful members of their communities.</p>
+
+      <p>I am currently pursuing a B.A. in Business with a concentration in Food Industry Management and a minor in Sustainable Food Systems at Arizona State University's W. P. Carey School of Business. I am also a member of Barrett, The Honors College and Beta Gamma Sigma, and have developed leadership experience through my work as President of The Forge and involvement in student and professional organizations.</p>
+
+      <p>My academic and professional interests have expanded beyond traditional business management into digital marketing, data analytics, global business, and sustainable food systems. Through the Global Career Accelerator, internships, and hands-on projects, I have built experience with marketing strategy, social media management, KPI analysis, Excel, data visualization, and business research.</p>
+
+      <p>Looking ahead, I hope to combine my experience in coffee and business with my passion for sustainability and community. My long-term goal is to build an entrepreneurial venture in the coffee industry that reflects the values I have developed throughout my career: strong leadership, meaningful connections, responsible business practices, and a genuine desire to create something that serves people well.</p>
     </div>
   </section>
 
@@ -45,27 +51,47 @@
     <div class="container">
       <h2>Skills</h2>
       <div class="skills-grid">
-        <div class="skill-card">
-          <!-- HTML icon -->
-          <i class="fas fa-code"></i>
-          <h3>HTML</h3>
-          <p>Semantic markup and structure</p>
-        </div>
-        <div class="skill-card">
-          <!-- CSS icon -->
-          <i class="fas fa-palette"></i>
-          <h3>CSS</h3>
-          <p>Styling and responsive design</p>
-        </div>
-        <div class="skill-card">
-          <!-- JavaScript icon -->
-          <i class="fab fa-js-square"></i>
-          <h3>JavaScript</h3>
-          <p>Interactivity and functionality</p>
-        </div>
+        <!-- Web Development Button -->
+        <button class="skill-btn" onclick="toggleSkillContent('web-dev')"><i class="fas fa-laptop-code"></i> Web Development</button>
+        
+        <!-- Data Analytics Button -->
+        <button class="skill-btn" onclick="toggleSkillContent('data-analytics')"><i class="fas fa-chart-bar"></i> Data Analytics</button>
+        
+        <!-- Digital Marketing Button -->
+        <button class="skill-btn" onclick="toggleSkillContent('digital-marketing')"><i class="fas fa-bullhorn"></i> Digital Marketing</button>
+      </div>
+      
+      <!-- Web Development Content -->
+      <div id="web-dev" class="skill-content">
+        <h3>Web Development</h3>
+        <p>Building responsive, user-friendly websites using HTML, CSS, and JavaScript. Skills include semantic markup, responsive design, and creating interactive web experiences for optimal user engagement.</p>
+      </div>
+      
+      <!-- Data Analytics Content -->
+      <div id="data-analytics" class="skill-content">
+        <h3>Data Analytics</h3>
+        <p>Analyzing data using Excel, KPI tracking, and data visualization tools. Expertise in translating raw data into actionable insights that drive business decisions and strategy.</p>
+      </div>
+      
+      <!-- Digital Marketing Content -->
+      <div id="digital-marketing" class="skill-content">
+        <h3>Digital Marketing</h3>
+        <p>Developing marketing strategies, managing social media campaigns, and analyzing performance metrics. Creating compelling digital content that connects with audiences and builds brand awareness.</p>
       </div>
     </div>
   </section>
+  
+  <!-- JavaScript for toggling skill content -->
+  <script>
+    // Function to toggle skill content visibility
+    function toggleSkillContent(skillId) {
+      // Get the skill content element by its ID
+      const skillContent = document.getElementById(skillId);
+      
+      // Toggle the 'active' class to show/hide content
+      skillContent.classList.toggle('active');
+    }
+  </script>
 
   <!-- Experiences Section -->
   <section id="experiences" class="experiences">

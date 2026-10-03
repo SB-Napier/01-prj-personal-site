@@ -1,0 +1,8 @@
+{
+  "name": "Stefanie Napier Portfolio",
+  "description": "Personal portfolio website for Stefanie Napier highlighting background, skills, experience, and projects in business, coffee, and sustainable food systems.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
